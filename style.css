@@ -1,114 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Noto Sans', sans-serif;
-    background: rgb(233, 233, 233);
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background: rgb(230, 228, 228);
 }
-main{
-    width: 25%;
-    max-width: 25%;
-    height: 100vh;
+main {
+  position: relative;
+  width: 25%;
+  max-width: 25%;
+  height: 100vh;
+  background: #f3f3f3;
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0px;
+}
+header img {
+    position: absolute;
+  width: 30px;
+}
+header img:nth-child(1){
+    top: 10px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
     background: #fff;
+    padding: 2px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px 0px #00000053;
 }
-header{
+header img:nth-child(2){
+    top: 10px;
+    right: 25px;
+}
+header marquee {
+    color: #0c457e;
+    font-weight: 500;
+    font-size: 19px;
+}
+.ticket-box{
+    /* background: red; */
+    margin: 0 18px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px #00000053;
+}
+.ticket-details {
+  background: #f78a4af5;
+  padding: 14px 14px 4px 14px;
+  border-radius: 4px 4px 0px 0px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.font1{
+    font-size: 15px;
+    font-weight: 600;
+}
+.font2{
+    font-size: 14px;
+    font-weight: 600;
+}
+.font3{
+    font-size: 15px;
+    font-weight: 700;
+}
+.ticket-heading{
+    margin-bottom: 8px;
+}
+/* .ticket-details hr {
+  margin: 2px 0;
+} */
+.ticket-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+.ticket-date p:nth-child(1){
+    margin-left: 40%;
+}
+.ticket-rate {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 10px;
+    margin-bottom: 3px;
 }
-header img{
-    width: 30px;
+.ticket-destination {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
 }
-header marquee{
-    color: #3d51eb;
+.ticket-destination p{
+  margin-top: 2px;
 }
-.ticket-details{
-    background: #ff74f3;
-    margin: 8px 8px;
-    padding: 8px;
-    border-radius: 4px;
-    font-size: 13px;
+.ticket-departure {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+.ticket-departure p{
+    margin-top: 2px;
+  }
+.text-circle {
+  margin-right: 10px;
+  background: #5b028cf5;
+  color: #dddbdb;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-circle p{
     font-weight: 500;
 }
-.ticket-details hr{
-    margin: 2px 0;
+.ticket-quantity {
+  display: flex;
+  align-items: center;
 }
-.ticket-date{
+.ticket-quantity p{
+    margin-right: 20px;
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 2px;
+}
+.ticket-category {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 2px;
 }
-.ticket-rate{
+.ticket-category-inner {
+  display: flex;
+  align-items: center;
+}
+.ticket-category-inner:nth-child(2) {
+  margin-left: 55px;
+}
+.ticket-category-inner p{
+  margin-left: 4px;
+  margin-bottom: 3px;
+}
+.sac-ir{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin: 3px 0px;
 }
-.ticket-destination{
-    display: flex;
-    align-items: center;
+.sac-ir p:nth-child(1){
+    margin-right: 15px;
 }
-.ticket-departure{
-    display: flex;
-    align-items: center;
+.train-notice{
+    font-size: 14px;
     margin-top: 4px;
+    margin-bottom: 6px;
 }
-.text-circle{
-    margin-right: 10px;
-    background: rgb(194, 6, 232);
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    border-radius: 25px;
-}
-.ticket-quantity{
+.train-distance{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 6px;
 }
-.ticket-category{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.train-distance p:nth-child(1){
+    margin-right: 50%;
 }
-.railway-warning{
-    font-size: 11px;
-    color: #fd6d2a;
-    padding: 10px;
+.railway-warning {
+  font-size: 10px;
+  color: #0a4e8e;
+  padding: 8px 16px 3px 16px;
 }
-.railway-warning p{
-    margin-bottom: 10px;
+.railway-warning p {
+  margin-bottom: 7px;
 }
-.buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.railway-warning a {
+  color: #fd6d2a;
 }
-.buttons button{
-    margin: 3px;
-    width: 80%;
-    background-image: linear-gradient(to right, rgb(255, 115, 0) , rgb(255, 145, 0));
-    padding: 5px;
-    color: #fff;
+.contact-info{
+  text-align: center;
+  color: #fc0303;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 8px 16px 3px 16px;
+}
+.buttons button {
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0px 0px 6px 0px #00000047;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 47, 0, 0.599),
+    rgba(255, 98, 0, 0.752)
+    );
+    padding: 10px 0px;
+    color: #efefef;
     border: none;
-    border-radius: 12px;
-    box-shadow: 0px 0px 30px 1px #e3e3e3;
+    border-radius: 25px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
+.buttons button:nth-child(3){
+  margin-bottom: 20px;
+}
+.footer-text{
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  font-size: 14px;
+}
+
 @media (max-width: 720px) {
-    main{
-        width: 100%;
-        max-width: 100%;
-        height: 100vh;
-        background: #fff;
-    }
+  main {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+  }
 }
