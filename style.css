@@ -58,7 +58,8 @@ header marquee {
     box-shadow: 0px 0px 10px 0px #00000053;
 }
 .ticket-details {
-  background: #f78a4af5;
+  /* background: #f78a4af5; */
+  background: #f578ef;
   padding: 14px 14px 4px 14px;
   border-radius: 4px 4px 0px 0px;
   font-size: 13px;
